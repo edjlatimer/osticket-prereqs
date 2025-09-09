@@ -15,7 +15,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 ---
 
 ## 📌 Project Overview
-This project documents the step-by-step installation of **osTicket v1.15.8** on an **Azure Virtual Machine running Windows 10**. It covers VM setup, IIS + PHP + MySQL configuration, osTicket deployment, and final security cleanup.
+This project documents the step-by-step installation of **osTicket v1.15.8** on an **Azure Virtual Machine running Windows 10**. It covers VM setup, IIS + PHP + MySQL configuration, osTicket deployment, and final security cleanup. I will completing this project using a MacbookAir(MacOS)
 
 ---
 
@@ -48,28 +48,40 @@ This project documents the step-by-step installation of **osTicket v1.15.8** on 
 ---
 
 ### 2. Prepare Installation Files
-- Inside the VM, download **osTicket-Installation-Files.zip**.
-- Unzip to Desktop → Folder should be named **osTicket-Installation-Files**.
-- All dependencies and installers will come from this folder.
+- Once VM deployment is complete, add a PC in the Windows App(Remote Desktop) using the IP address      of the VM in Azure, then log into the VM using the adminsistrator account credentials <img width="1470" height="956" alt="vm pic 3" src="https://github.com/user-attachments/assets/5781215f-5740-4cbd-b97f-2263d8d02b56" />
+- I have provided a link here:(https://docs.google.com/document/d/1DyjX8LeVU98LjhXO2t2K2F0aHywI2N9GD57T3taO5qo/edit?tab=t.0) This link will provide with everything you need to get osTicket up and operating.
+- Download **osTicket-Installation-Files.zip**, Unzip to Desktop → Folder should be named **osTicket-Installation-Files** (all dependencies and installers will come from this folder)
+
+<img width="1470" height="956" alt="project pic" src="https://github.com/user-attachments/assets/60d26a09-49ee-44de-ada7-76d73c71c082" />
+
+<img width="1470" height="956" alt="project pic5" src="https://github.com/user-attachments/assets/e11d2669-3a3f-48ab-8cc1-5d7606436232" />
 
 ---
 
 ### 3. Configure IIS and PHP
-1. **Install IIS with CGI support:**
-   - World Wide Web Services → Application Development Features → enable **CGI**.
-2. From the installation folder, install:
-   - **PHP Manager for IIS** (`PHPManagerForIIS_V1.5.0.msi`)
-   - **Rewrite Module** (`rewrite_amd64_en-US.msi`)
-3. Create a directory: `C:\PHP`
-4. Extract **PHP 7.3.8** (`php-7.3.8-nts-Win32-VC15-x86.zip`) into `C:\PHP`
-5. Install **VC_redist.x86.exe**
+   -**Install IIS with CGI support:**
+   -  Go to Contorl Panel → Uninstall a program → Select Turn windows features on or off (on the left       side) → Enable Internet Information Services **(IIS)** → World Wide Web Services → Application Development      Features → Enable **CGI**.
 
----
+<img width="1470" height="956" alt="project pic6" src="https://github.com/user-attachments/assets/f8becf06-598f-4cc0-9a63-209146696e31" />
+
+   -  From **osTicket-Installation-Files** → Install **PHPManagerForIIS_V1.5.0** & **rewrite_amd64_en-US** (*Install individually by double-clicking each one seperately)
+
+<img width="1470" height="956" alt="project pic7" src="https://github.com/user-attachments/assets/9f45bdc8-b64a-4154-bcaa-627e8877dfa2" />
+
+   - **Create a directory:** Go to File Exploer → This PC → Windows(C:) → create new folder(Titled "PHP")
+  
+   -  Go back to **osTicket-Installation-Files** → (right-click) php-7.3.8-nts-Win32-VC15-x86.zip → Extract All → Browse → C:\PHP → Extract
+   
+<img width="1470" height="956" alt="project pic10" src="https://github.com/user-attachments/assets/e343be60-6a94-47d9-9fc5-533f671cdba6" />
+
+   - Also in **osTicket-Installation-Files** → install VC_redist.x86.exe (double-click)
 
 ### 4. Install and Configure MySQL
-1. From the installation folder, install **MySQL 5.5.62** (`mysql-5.5.62-win32.msi`).
-2. Choose **Typical Setup** → Run Configuration Wizard → **Standard Configuration**.
-
+   
+   
+   From **osTicket-Installation-Files** → install mysql-5.5.62-win32.msi (double-click) → 
+   (throughout install) select Typical Setup → Run Configuration Wizard → Standard    
+Configuration 
 ---
 
 ### 5. Configure IIS with PHP
