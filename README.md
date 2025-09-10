@@ -180,14 +180,7 @@ Name: osTicket → OK
 <img width="1470" height="956" alt="project pic18" src="https://github.com/user-attachments/assets/469d8e6c-164e-4474-be5c-baca1e9f4e0a" />
 
 
-Go back to osTicket website in web browser → Press Continue → Fill out osTicket Basic Installation - System Settings and Admin User areas with your own information 
 
-
-For Database Settings put these specifics(for the sake of the lab) →
-
-MySQL Database: osTicket
-MySQL Username: root
-MySQL Password: root
 
 
 ---
@@ -225,6 +218,8 @@ MySQL Password: **root**
 
    
    
+   
+  
    
    - End User Portal: [http://localhost/osTicket/](http://localhost/osTicket/)
 
