@@ -209,19 +209,28 @@ MySQL Password: **root**
 <img width="1470" height="956" alt="project pic19" src="https://github.com/user-attachments/assets/46677e79-c185-41b2-ad95-c3893d3bcd93" />
 
 
- 
+ ***osTicket is Officially UP and Ready to Operate***
+
+
+ ---
 
  
  Access URLs:
+   
+   
    - Admin/Staff Login: [http://localhost/osTicket/scp/login.php](http://localhost/osTicket/scp/login.php)
+   
    
    <img width="1470" height="956" alt="project pic20" src="https://github.com/user-attachments/assets/06fa8890-5dce-4212-a699-29b1f5145d58" />
 
    
    
+   
    - End User Portal: [http://localhost/osTicket/](http://localhost/osTicket/)
 
+  
    <img width="1470" height="956" alt="project pic21" src="https://github.com/user-attachments/assets/1a12a927-7771-4765-8d6a-2f2a0c51f271" />
+
 
 ---
 
