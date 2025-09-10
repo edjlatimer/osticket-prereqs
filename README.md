@@ -22,6 +22,7 @@ This project documents the step-by-step installation of **osTicket v1.15.8** on 
 ## 🚀 Installation Steps
 
 ### 1. Create an Azure Virtual Machine **I'll be using these VM Specifications for this project:**
+
 - **Resource Group:** [Create new, any name you like that works]
 - **Virtual Machine Name:** [Any name you like that works]
 - **Image(OS):** Windows 10 Pro, version 22H2 
@@ -32,7 +33,9 @@ This project documents the step-by-step installation of **osTicket v1.15.8** on 
 
 ---
 
+
 ### 2. Prepare Installation Files
+
 - Once VM deployment is complete, add a PC in the Windows App(Remote Desktop) using the IP address      of the VM in Azure, then log into the VM using the adminsistrator account credentials <img width="1470" height="956" alt="vm pic 3" src="https://github.com/user-attachments/assets/5781215f-5740-4cbd-b97f-2263d8d02b56" />
 - I have provided a link here:(https://docs.google.com/document/d/1DyjX8LeVU98LjhXO2t2K2F0aHywI2N9GD57T3taO5qo/edit?tab=t.0) This link will provide with everything you need to get osTicket up and operating.
 - Download **osTicket-Installation-Files.zip**, Unzip to Desktop → Folder should be named **osTicket-Installation-Files** (all dependencies and installers will come from this folder)
@@ -46,26 +49,37 @@ This project documents the step-by-step installation of **osTicket v1.15.8** on 
 
 ---
 
+
 ### 3. Configure IIS and PHP
+  
    -**Install IIS with CGI support:**
-   -  Go to Contorl Panel → Uninstall a program → Select Turn windows features on or off (on the left       side) → Enable Internet Information Services **(IIS)** → World Wide Web Services → Application Development      Features → Enable **CGI**.
+   -  Go to Contorl Panel → Uninstall a program → Select Turn windows features on or off (on the left       side) → Enable Internet Information Services **(IIS)** → World Wide Web Services → Application Development Features → Enable **CGI**.
 
 
 <img width="1470" height="956" alt="project pic6" src="https://github.com/user-attachments/assets/f8becf06-598f-4cc0-9a63-209146696e31" />
 
+  
    -  From **osTicket-Installation-Files** → Install **PHPManagerForIIS_V1.5.0** & **rewrite_amd64_en-US** (*Install individually by double-clicking each one seperately)
 
 
 <img width="1470" height="956" alt="project pic7" src="https://github.com/user-attachments/assets/9f45bdc8-b64a-4154-bcaa-627e8877dfa2" />
 
+  
    - **Create a directory:** Go to File Exploer → This PC → Windows(C:) → create new folder(Titled "PHP")
+  
   
    -  Go back to **osTicket-Installation-Files** → (right-click) php-7.3.8-nts-Win32-VC15-x86.zip → Extract All → Browse → Windows (C:) → PHP → Extract
    
 
+
 <img width="1470" height="956" alt="project pic10" src="https://github.com/user-attachments/assets/e343be60-6a94-47d9-9fc5-533f671cdba6" />
 
+  
    - Also in **osTicket-Installation-Files** → install VC_redist.x86.exe (double-click)
+
+
+---
+
 
 ### 4. Install and Configure MySQL
 
@@ -82,36 +96,48 @@ password: root
 <img width="1470" height="956" alt="project pic11" src="https://github.com/user-attachments/assets/581cd80d-5041-40b8-9d61-d2435cd178dd" />
 
 
-   
 ---
 
+
 ### 5. Configure IIS with PHP (Register PHP with PHP Manager)
+
 -  Start (Menu) → type IIS(Internet Information Services) → Run as Administrator → PHP Manager → Register new PHP version → Browse → Windows (C:) → PHP → php-cgi → open
+
 
 -  Restart IIS by right-clicking server(osTicket-vm-name) → Stop (wait a moment) → Start
 
+
 <img width="1470" height="956" alt="project pic12" src="https://github.com/user-attachments/assets/9c5aee7d-63a5-44ad-b1b8-cdddba0283cc" />
 
+
 ### 6. Deploy osTicket
-1. From **osTicket-Installation-Files** → (right-click) osTicket v1.15.8 → Extrat All, with in the same folder which creates a separate folder osTicket v1.15.8 (at the top)
+
+-  From **osTicket-Installation-Files** → (right-click) osTicket v1.15.8 → Extrat All, with in the same folder which creates a separate folder osTicket v1.15.8 (at the top)
+
 
 <img width="1470" height="956" alt="project pic13" src="https://github.com/user-attachments/assets/89932447-c642-4e6a-8711-46c8339b5092" />
 
+
 Click into the newly created file folder **osTicket v1.15.8**(not the zip folder) → Copy the upload folder → Windows(C:) → inetpub → wwwroot → paste
+
 
 <img width="1470" height="956" alt="project pic14" src="https://github.com/user-attachments/assets/80f70798-bd9f-4c00-87b7-398262834d6c" />
 
 
 Rename "upload" to "osTicket"(exactly how its spelled) → restart IIS agagin by right-clicking server(osTicket-vm-name) → Stop (wait a moment) → Start
 
+
 In IIS Manager → server(osTicket-vm-name) → Sites → Default Web Site → osTicket → Browse *:80(http)
 
+
 That should bring up osTicket
+
 
 <img width="1470" height="956" alt="project pic15" src="https://github.com/user-attachments/assets/094d7397-8c56-4e16-a7a2-a3e21b6d678b" />
 
 
 ---
+
 
 ### 7. Enable PHP Extensions that are Disabled (in previous picture)
 
@@ -122,16 +148,20 @@ That should bring up osTicket
   - php_opcache.dll
 - Refresh osTicket in the browser to confirm changes.
 
+
 <img width="1470" height="956" alt="project pic16" src="https://github.com/user-attachments/assets/8b77a597-935d-44d0-99fd-35b85b1e928f" />
+
 
 Notice a few more PHP Extensions are now checked green
  
 
 ### 8. Configure osTicket Files
-1. Rename configuration file and assign permissions
+
+-  Rename configuration file and assign permissions
+ 
  -  File Exploer → This PC  → windows(C:) → inetpub → wwwroot → osTicket → include → find **ost-sampleconfig.php** (right-click) → Rename → **ost-config.php** 
 
- -  **ost-config.php**(right-click) → properties → Security → Advanced → Diable inheritance → Remove all inherited permissions from this object → Add → Select a principal → 'type' Everyone (for the sake of the project) → Check Names → OK → check Full control → Apply → OK
+-  **ost-config.php**(right-click) → properties → Security → Advanced → Diable inheritance → Remove all inherited permissions from this object → Add → Select a principal → 'type' Everyone (for the sake of the project) → Check Names → OK → check Full control → Apply → OK
 
 
 <img width="1470" height="956" alt="project pic17" src="https://github.com/user-attachments/assets/b70d4fa7-3f25-4521-b741-ec16f54ff11b" />
@@ -139,16 +169,19 @@ Notice a few more PHP Extensions are now checked green
 
 ---
 
+
 ### 9. Set Up osTicket Database
 
 Go to **osTicket-Installation-Files** on the Desktop → HeidiSQL_12.3.0.6589_Setup → Install → skip → New →
 Username: **root** & Password: **root** → Open → Unnamed(right-click) → Create New → Database → 
 Name: osTicket → OK
 
+
 <img width="1470" height="956" alt="project pic18" src="https://github.com/user-attachments/assets/469d8e6c-164e-4474-be5c-baca1e9f4e0a" />
 
 
 Go back to osTicket website in web browser → Press Continue → Fill out osTicket Basic Installation - System Settings and Admin User areas with your own information 
+
 
 For Database Settings put these specifics(for the sake of the lab) →
 
@@ -157,12 +190,8 @@ MySQL Username: root
 MySQL Password: root
 
 
-
-1. Install **HeidiSQL** from installation folder.
-2. Open HeidiSQL → create a new session 
-3. Connect and create a new database: **osTicket**.
-
 ---
+
 
 ### 10. Complete Web Installation
 
@@ -211,5 +240,4 @@ graph TD;
 
 ---
 
-📌 **Author:** Your Name  
-📌 **License:** MIT
+📌 **Author:** Ed Latimer
