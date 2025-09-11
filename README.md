@@ -230,7 +230,7 @@ MySQL Password: **root**
 ---
 
 
-✅ ***osTicket is now fully installed and secured on your Azure VM!***
+✅ **osTicket is now fully installed and secured on your Azure VM!**
 
 ---
 
