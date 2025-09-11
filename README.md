@@ -36,7 +36,9 @@ This project documents an in-depth step-by-step installation of **osTicket(Ticke
 
 ### 2. Prepare Installation Files
 
-- Once VM deployment is complete, add a PC in the Windows App(Remote Desktop) using the IP address      of the VM in Azure, then log into the VM using the adminsistrator account credentials <img width="1470" height="956" alt="vm pic 3" src="https://github.com/user-attachments/assets/5781215f-5740-4cbd-b97f-2263d8d02b56" />
+- Once VM deployment is complete, add a PC in the Windows App(Remote Desktop) using the IP address      of the VM in Azure, then log into the VM using the adminsistrator account credentials
+
+- <img width="1470" height="956" alt="vm pic 3" src="https://github.com/user-attachments/assets/5781215f-5740-4cbd-b97f-2263d8d02b56" />
 - I have provided a link here:(https://docs.google.com/document/d/1DyjX8LeVU98LjhXO2t2K2F0aHywI2N9GD57T3taO5qo/edit?tab=t.0) This link will provide with everything you need to get osTicket up and operating.
 - Download **osTicket-Installation-Files.zip**, Unzip to Desktop → Folder should be named **osTicket-Installation-Files** (all dependencies and installers will come from this folder)
 
