@@ -6,7 +6,7 @@
 This tutorial outlines the prerequisites and installation of the open-source help desk ticketing system osTicket.<br />
 
 
-# 🛠️ osTicket on Azure VM (Windows 10): Prerequisites and Installation
+#  osTicket on Azure VM (Windows 10): Prerequisites and Installation
 
 ![Azure](https://img.shields.io/badge/Azure-Cloud-blue?logo=microsoft-azure)
 ![osTicket](https://img.shields.io/badge/osTicket-Support-orange)
@@ -14,12 +14,12 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 ---
 
-## 📌 Project Overview
+##  Project Overview
 This project documents an in-depth step-by-step installation of **osTicket(Ticketing System** on an **Azure Virtual Machine running Windows 10**. It covers VM setup, IIS + PHP + MySQL configuration, and osTicket deployment. I will completing this project using a MacbookAir(MacOS)
 
 ---
 
-## 🚀 Installation Steps
+##  Installation Steps
 
 ### 1. Create an Azure Virtual Machine **I'll be using these VM Specifications for this project:**
 
@@ -230,11 +230,11 @@ MySQL Password: **root**
 ---
 
 
-✅ osTicket is now fully installed and secured on your Azure VM!
+✅ ***osTicket is now fully installed and secured on your Azure VM!***
 
 ---
 
-## 📊 Architecture Diagram (Optional)
+##  Architecture Diagram 
 ```mermaid
 graph TD;
     User -->|Browser| AzureVM
@@ -244,4 +244,4 @@ graph TD;
 
 ---
 
-📌 **Author:** Ed Latimer
+ **Author:** Ed Latimer
