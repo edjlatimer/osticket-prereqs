@@ -15,7 +15,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 ---
 
 ## 📌 Project Overview
-This project documents the step-by-step installation of **osTicket v1.15.8** on an **Azure Virtual Machine running Windows 10**. It covers VM setup, IIS + PHP + MySQL configuration, and osTicket deployment. I will completing this project using a MacbookAir(MacOS)
+This project documents an in-depth step-by-step installation of **osTicket(Ticketing System** on an **Azure Virtual Machine running Windows 10**. It covers VM setup, IIS + PHP + MySQL configuration, and osTicket deployment. I will completing this project using a MacbookAir(MacOS)
 
 ---
 
