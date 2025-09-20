@@ -24,15 +24,37 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 <h2>Installation Steps<h2>
 
  ### Create an Azure Virtual Machine 
+ - Within Azure, go search up Virtual Machines → Create → Virtual Machine
 
+![project VM create pic](https://github.com/user-attachments/assets/a7760116-01d0-4518-93e0-20f2510595e0)
 
-<img width="1470" height="956" alt="vm setup pic 1" src="https://github.com/user-attachments/assets/62843094-f08a-4c96-8845-eecce420d6cc" />
+---
+
+- Now, in order for Azure to create/validate the virtual machine, you must enter desired credentials and ONLY have to modify the settings mentioned below (all other settings can be left alone/default)
 
 - **Resource Group:** [Create new, any name you like that works]
 - **Virtual Machine Name:** [Any name you like that works]
 - **Image(OS):** Windows 10 Pro, version 22H2 
 - **Size(vCPUs):** Standard_D2s_v3 - 2 vcpus, 8 GiB memory
-- **Administrator Account:** Create new, *These credetials will be used to Log into the VM via Remote Desktop for (WindowsOs)or Download Windows App for (MacOs)
+- **Administrator Account:** Create new, *These credetials will be used to Log into the VM via Remote       Desktop App (MacOs)
+    
+<img width="1470" height="956" alt="vm setup pic 1" src="https://github.com/user-attachments/assets/62843094-f08a-4c96-8845-eecce420d6cc" />
+
+![vm create pic 2](https://github.com/user-attachments/assets/65dad87f-c0c5-4557-9e28-6e975587023e)
+
+- Once this is complete, you can click on "Review+Create"
+
+
+---
+
+- Azure will then run a Validation process. If previous steps are completed correctly, you will be brought to this screen stating "Validation passed"
+
+![project pic VM validation passed](https://github.com/user-attachments/assets/11778173-f1b9-4bc9-ac09-e24104a100e8)
+
+
+ - You may now click "Create"
+
+
 
 ---
 
