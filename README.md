@@ -93,11 +93,25 @@ Next, we are going to select the virtual machine within the Remote Desktop app a
 ![rdc app login](https://github.com/user-attachments/assets/bb9835f0-9501-465d-9e91-09ea394a42d1)
 
 
+- The actual virtual machine will then open and begin loading
+
+![rdc actually logging in](https://github.com/user-attachments/assets/c60a7ffc-cf49-4fba-a50d-0756a88f1c9e)
 
 
+
+![rdc loaded up](https://github.com/user-attachments/assets/893d6e68-7b30-471a-958b-bba9d00e2a1d)
 
  
- 
+ - After loading, you have successfully logged into the virtual machine you created!
+
+
+---
+
+
+
+
+
+
 
 
 
