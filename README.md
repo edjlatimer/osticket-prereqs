@@ -8,18 +8,23 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 <h2>Environments and Technologies Used</h2>
 
 - Microsoft Azure (Virtual Machines/Compute)
-- Remote Desktop
+- Microsoft Remote Desktop (RDP)
 - Internet Information Services (IIS)
 
 <h2>Operating Systems Used </h2>
 
 - Windows 10</b> (21H2)
 
+<h2>List of Prerequisites</h2>
+
+- Azure Virtual Machine
+- osTicket Installation Files
+- Heidi SQL
 ---
 
 ##  Installation Steps
 
-### 1. Create an Azure Virtual Machine **I'll be using these VM Specifications for this project:**
+### Create an Azure Virtual Machine 
 
 - **Resource Group:** [Create new, any name you like that works]
 - **Virtual Machine Name:** [Any name you like that works]
@@ -32,11 +37,12 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 ---
 
 
-### 2. Prepare Installation Files
+### Prepare Installation Files
 
 - Once VM deployment is complete, add a PC in the Windows App(Remote Desktop) using the IP address      of the VM in Azure, then log into the VM using the adminsistrator account credentials
 
-- <img width="1470" height="956" alt="vm pic 3" src="https://github.com/user-attachments/assets/5781215f-5740-4cbd-b97f-2263d8d02b56" />
+ <img width="1470" height="956" alt="vm pic 3" src="https://github.com/user-attachments/assets/5781215f-5740-4cbd-b97f-2263d8d02b56" />
+
 - I have provided a link here:(https://docs.google.com/document/d/1DyjX8LeVU98LjhXO2t2K2F0aHywI2N9GD57T3taO5qo/edit?tab=t.0) This link will provide with everything you need to get osTicket up and operating.
 - Download **osTicket-Installation-Files.zip**, Unzip to Desktop → Folder should be named **osTicket-Installation-Files** (all dependencies and installers will come from this folder)
 
@@ -50,9 +56,8 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 ---
 
 
-### 3. Configure IIS and PHP
-  
-   -**Install IIS with CGI support:**
+### Install IIS with CGI support
+
    -  Go to Contorl Panel → Uninstall a program → Select Turn windows features on or off (on the left       side) → Enable Internet Information Services **(IIS)** → World Wide Web Services → Application Development Features → Enable **CGI**.
 
 
@@ -81,7 +86,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 ---
 
 
-### 4. Install and Configure MySQL
+### Install and Configure MySQL
 
    From **osTicket-Installation-Files** → install mysql-5.5.62-win32.msi (double-click) → 
    (throughout install) select Typical Setup → Run Configuration Wizard → Standard    
