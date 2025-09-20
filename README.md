@@ -105,6 +105,9 @@ Next, we are going to select the virtual machine within the Remote Desktop app a
  - After loading, you have successfully logged into the virtual machine you created!
 
 
+
+
+Note: Everything from here on out will be done the the Virtual Machine only.
 ---
 
 
@@ -120,7 +123,13 @@ Next, we are going to select the virtual machine within the Remote Desktop app a
 
 <img width="1470" height="956" alt="project pic5" src="https://github.com/user-attachments/assets/e11d2669-3a3f-48ab-8cc1-5d7606436232" />
 
-I have provided a link here:(https://docs.google.com/document/d/1DyjX8LeVU98LjhXO2t2K2F0aHywI2N9GD57T3taO5qo/edit?tab=t.0) This link will provide with everything you need to get osTicket up and operating.
+I have provided a link here(osTicket Installation Files):
+
+[
+](https://drive.usercontent.google.com/download?id=1b3RBkXTLNGXbibeMuAynkfzdBC1NnqaD&export=download&authuser=0)
+
+
+This link will provide with everything you need to get osTicket up and operating.
 - Download **osTicket-Installation-Files.zip**, Unzip to Desktop → Folder should be named **osTicket-Installation-Files** (all dependencies and installers will come from this folder)
 
 
