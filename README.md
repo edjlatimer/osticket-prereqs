@@ -52,18 +52,54 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 ![project pic VM validation passed](https://github.com/user-attachments/assets/11778173-f1b9-4bc9-ac09-e24104a100e8)
 
 
- - You may now click "Create"
+ - You may now click "Create" and deployment process of your virtual machine will now take place
+
+![vm deployment process](https://github.com/user-attachments/assets/3cdbeb01-9d5e-4fb6-b17f-be9490ffddba)
+
+
+ - Once process finishes, screen will tell you "Your deployment is complete"
+
+
+![vm deployment complete](https://github.com/user-attachments/assets/84966319-b46d-4b53-90b8-72e79de0c20a)
 
 
 
 ---
 
 
-### Prepare Installation Files
+### Loging into Virtual Machine and Preparing Installation Files
 
- <img width="1470" height="956" alt="vm pic 3" src="https://github.com/user-attachments/assets/5781215f-5740-4cbd-b97f-2263d8d02b56" />
+Once VM deployment is complete, we are going to open the Remote Desktop app and add a PC 
 
- - Once VM deployment is complete, add a PC in the Windows App(Remote Desktop) using the IP address      of the VM in Azure, then log into the VM using the adminsistrator account credentials
+![add a pc for vm](https://github.com/user-attachments/assets/e59fec26-0964-431b-8883-d3d2dad8c288)
+
+It is going to require a host name/PC name, which you will use the Public IP Address of the virtual machine you just created within Azure
+
+![vm ip address for RDC app login](https://github.com/user-attachments/assets/db21c0d5-d5b4-4f90-a472-47f830fc74b7)
+
+
+- You can also give the virtual machine a name to properly identify it (for this project we'll use "osTicket"). Once thats entered, it should look something like this 
+
+![vm ip for rdc login 2](https://github.com/user-attachments/assets/4bd7a881-676f-41bb-9cee-0adb8f92b8ef)
+
+
+- Select "ADD" and you now have a created virtual machine that is ready to operate
+
+![vm created ready to login](https://github.com/user-attachments/assets/62cfae2b-c06e-4110-864a-4a4cc8bb07d5)
+
+
+Next, we are going to select the virtual machine within the Remote Desktop app and login using the same Administrator Account credentials that you used to create the Virtual machine within Azure (in the previous beginning steps)
+
+![rdc app login](https://github.com/user-attachments/assets/bb9835f0-9501-465d-9e91-09ea394a42d1)
+
+
+
+
+
+ 
+ 
+
+
 
 <img width="1470" height="956" alt="project pic" src="https://github.com/user-attachments/assets/60d26a09-49ee-44de-ada7-76d73c71c082" />
 
