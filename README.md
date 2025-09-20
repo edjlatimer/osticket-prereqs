@@ -22,17 +22,18 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 - Heidi SQL
 ---
 
-##  Installation Steps
+###  Installation Steps
 
 ### Create an Azure Virtual Machine 
+
+
+<img width="1470" height="956" alt="vm setup pic 1" src="https://github.com/user-attachments/assets/62843094-f08a-4c96-8845-eecce420d6cc" />
 
 - **Resource Group:** [Create new, any name you like that works]
 - **Virtual Machine Name:** [Any name you like that works]
 - **Image(OS):** Windows 10 Pro, version 22H2 
 - **Size(vCPUs):** Standard_D2s_v3 - 2 vcpus, 8 GiB memory
 - **Administrator Account:** Create new, *These credetials will be used to Log into the VM via Remote Desktop for (WindowsOs)or Download Windows App for (MacOs)
-
-<img width="1470" height="956" alt="vm setup pic 1" src="https://github.com/user-attachments/assets/62843094-f08a-4c96-8845-eecce420d6cc" />
 
 ---
 
