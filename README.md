@@ -5,17 +5,15 @@
 <h1>osTicket - Prerequisites and Installation</h1>
 This tutorial outlines the prerequisites and installation of the open-source help desk ticketing system osTicket.<br />
 
+<h2>Environments and Technologies Used</h2>
 
-#  osTicket on Azure VM (Windows 10): Prerequisites and Installation
+- Microsoft Azure (Virtual Machines/Compute)
+- Remote Desktop
+- Internet Information Services (IIS)
 
-![Azure](https://img.shields.io/badge/Azure-Cloud-blue?logo=microsoft-azure)
-![osTicket](https://img.shields.io/badge/osTicket-Support-orange)
-![Windows](https://img.shields.io/badge/Windows-10-blue?logo=windows)
+<h2>Operating Systems Used </h2>
 
----
-
-##  Project Overview
-This project documents an in-depth step-by-step installation of **osTicket(Ticketing System)** on an **Azure Virtual Machine running Windows 10**. It covers VM setup, IIS + PHP + MySQL configuration, osTicket deployment, and more. I will be completing this project using a MacbookAir(MacOS)
+- Windows 10</b> (21H2)
 
 ---
 
