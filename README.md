@@ -107,35 +107,50 @@ Next, we are going to select the virtual machine within the Remote Desktop app a
 
 
 
-Note: Everything from here on out will be done the the Virtual Machine only.
+**Note: Everything from here on out will be done the the Virtual Machine only.**
+
 ---
 
+- Copy this link (osTicket Installation Files): (https://drive.usercontent.google.com/download?id=1b3RBkXTLNGXbibeMuAynkfzdBC1NnqaD&export=download&authuser=0)    (all dependencies and installers will come from this folder)
+- Within the virtual machine open up Microsoft Edge web browser and paste the (osTicket Installation Files) link above in the browser's search bar and enter
+
+ 
+![osTicket files link copy and paste](https://github.com/user-attachments/assets/61421611-39ee-4053-bb71-94855749bee7)
+
+
+
+![osTicket files link enterd](https://github.com/user-attachments/assets/9eda99bd-effc-4a93-b883-f555c75a5506)
+
+- It'll bring you to this page, select "Download anyway"  
 
 
 
 
+- Once download completes open **osTicket-Installation-Files.zip**, it will take you to the downloads folder, from there click and drag it to Desktop → then (right click) Extraxt All → (should be named **osTicket-Installation-Files**) select "Extract"
 
 
+![osTicket file on desktop](https://github.com/user-attachments/assets/bcb8c7f5-5c6a-4928-8b9e-608c96ffb80f)
+
+![extract osTicket files](https://github.com/user-attachments/assets/78a3f9a9-5503-4316-bb70-8c938a86583f)
+
+- The File folder "osTicket-Installation-Files" should pop up
 
 
-<img width="1470" height="956" alt="project pic" src="https://github.com/user-attachments/assets/60d26a09-49ee-44de-ada7-76d73c71c082" />
+![osTicket folder](https://github.com/user-attachments/assets/0f038d27-32b6-4033-a28f-27ba7c85d3c3)
 
+![osTicket folder opened](https://github.com/user-attachments/assets/249d4bf0-fbe8-4d07-ac5e-d0ac31c2317a)
 
-<img width="1470" height="956" alt="project pic5" src="https://github.com/user-attachments/assets/e11d2669-3a3f-48ab-8cc1-5d7606436232" />
+ - As you you can see it is containing all of the file dependencies and installers inside of the folder
 
-I have provided a link here(osTicket Installation Files):
+ - **Optional:** Feel free to delete the original **osTicket-Installation-Files.zip** (icon with actual zipper on it), since we unziped the file and now have everything we need in the new **osTick-Installation-Files** folder
+ 
 
-[
-](https://drive.usercontent.google.com/download?id=1b3RBkXTLNGXbibeMuAynkfzdBC1NnqaD&export=download&authuser=0)
-
-
-This link will provide with everything you need to get osTicket up and operating.
-- Download **osTicket-Installation-Files.zip**, Unzip to Desktop → Folder should be named **osTicket-Installation-Files** (all dependencies and installers will come from this folder)
-
-
+ ---
+ 
+ 
 ### Install IIS with CGI support
 
-   -  Go to Contorl Panel → Uninstall a program → Select Turn windows features on or off (on the left       side) → Enable Internet Information Services **(IIS)** → World Wide Web Services → Application Development Features → Enable **CGI**.
+ - Go to Start Menu → Contorl Panel → Uninstall a program → Select Turn windows features on or off (on the left       side) → Enable Internet Information Services **(IIS)** → World Wide Web Services → Application Development Features → Enable **CGI**.
 
 
 <img width="1470" height="956" alt="project pic6" src="https://github.com/user-attachments/assets/f8becf06-598f-4cc0-9a63-209146696e31" />
