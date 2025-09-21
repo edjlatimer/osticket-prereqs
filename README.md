@@ -219,36 +219,46 @@ Next, we are going to select the virtual machine within the Remote Desktop app a
 
 ### Install and Configure MySQL
 
-   From **osTicket-Installation-Files** → install mysql-5.5.62-win32.msi (double-click) → 
-   (throughout install) select Typical Setup → Run Configuration Wizard → Standard    
-Configuration → Modify Security Settings, New root password & Confirm: root → Execute
+- Go to **osTicket-Installation-Files** → (double-click) **mysql-5.5.62-win32.msi** → (throughout install) select Typical Setup → Run Configuration Wizard → Standard Configuration → Modify Security Settings, New root password: root & Confirm: root → Execute → Finish
 
-username: root
 
-password: root
+![MYSQL install](https://github.com/user-attachments/assets/95aa71da-53ee-4ccb-a870-933317ccd0d3)
 
+![MYSQL install 2](https://github.com/user-attachments/assets/acb0d0a5-7e9b-4101-a919-a9494cf146ea)
+
+
+
+**username: root**
+**&** **password: root**
 (simplie credentials for the sake of this project)   
+![MYSQL install 3](https://github.com/user-attachments/assets/05f67aaa-461a-4878-b257-5a33d97b9124)
 
-<img width="1470" height="956" alt="project pic11" src="https://github.com/user-attachments/assets/581cd80d-5041-40b8-9d61-d2435cd178dd" />
+
+![MYSQL install finish](https://github.com/user-attachments/assets/085e595c-27a5-43a1-8a74-cb2b253e99c1)
 
 
 ---
 
 
-### 5. Configure IIS with PHP (Register PHP with PHP Manager)
+### Configure IIS with PHP (Register PHP with PHP Manager)
 
--  Start (Menu) → type IIS(Internet Information Services) → Run as Administrator → PHP Manager → Register new PHP version → Browse → Windows (C:) → PHP → php-cgi → open
+- Start (Menu) → Type IIS(Internet Information Services) → Run as Administrator → PHP Manager → Register new PHP version → Browse → Windows (C:) → PHP → php-cgi → Open → Ok
+  
+![configure IIs](https://github.com/user-attachments/assets/a2f2d553-b7f0-414a-ac81-3efd9771e392)
 
-
--  Restart IIS by right-clicking server(osTicket-vm-name) → Stop (wait a moment) → Start
-
-
-<img width="1470" height="956" alt="project pic12" src="https://github.com/user-attachments/assets/9c5aee7d-63a5-44ad-b1b8-cdddba0283cc" />
+![configure IIS 2](https://github.com/user-attachments/assets/df68d715-a037-43f6-b12c-1990307beceb)
 
 
-### 6. Deploy osTicket
+- Now restart IIS within IIS Manager by right-clicking server **osTicket-vm** → Stop (wait a moment) → Start
 
--  From **osTicket-Installation-Files** → (right-click) osTicket v1.15.8 → Extrat All, with in the same folder which creates a separate folder osTicket v1.15.8 (at the top)
+![configure IIS 3](https://github.com/user-attachments/assets/32451ff3-1f56-414b-82fd-cec27613b9e4)
+
+
+
+
+### Deploy osTicket
+
+- Go back **osTicket-Installation-Files** → (right-click) osTicket v1.15.8 → Extrat All, with in the same folder which creates a separate folder osTicket v1.15.8 (at the top)
 
 
 <img width="1470" height="956" alt="project pic13" src="https://github.com/user-attachments/assets/89932447-c642-4e6a-8711-46c8339b5092" />
