@@ -187,20 +187,32 @@ Next, we are going to select the virtual machine within the Remote Desktop app a
 
  ---
  
- ### Create a directory
+ ### Create a directory on C:\PHP & Install Visual C++ Redistributable
 
 - Go to File Exploer → This PC → Windows(C:) → create new folder(Titled "PHP")
   
-  
- -  Go back to **osTicket-Installation-Files** → (right-click) php-7.3.8-nts-Win32-VC15-x86.zip → Extract All → Browse → Windows (C:) → PHP → Extract
-   
 
+![Create directory PHP folder](https://github.com/user-attachments/assets/a3a2d42c-9e41-4f93-b6be-2ad4d8d71307)
+
+
+
+- Go back to **osTicket-Installation-Files** → (right-click) **php-7.3.8-nts-Win32-VC15-x86.zip** → Extract All → Browse → Windows (C:) → PHP → Extract
+   
 
 <img width="1470" height="956" alt="project pic10" src="https://github.com/user-attachments/assets/e343be60-6a94-47d9-9fc5-533f671cdba6" />
 
-  
-   - Also in **osTicket-Installation-Files** → install VC_redist.x86.exe (double-click)
 
+- As you can see all Extracted files are now in the PHP folder you just created
+
+![PHP zip files extracted to PHP folder](https://github.com/user-attachments/assets/f3ff5709-6efc-424d-b8f5-d324ba347c37)
+  
+   
+   
+- Next, go back in **osTicket-Installation-Files** → (Double-click) **VC_redist.x86.exe** and go through install
+
+![VC install](https://github.com/user-attachments/assets/60294686-1b1b-49cc-82bf-5045dec17017)
+
+![VC install complete](https://github.com/user-attachments/assets/5b41f60c-ea45-4b3a-90ce-59210ee1e75a)
 
 ---
 
