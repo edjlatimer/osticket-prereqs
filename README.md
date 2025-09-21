@@ -81,15 +81,13 @@ It is going to require a host name/PC name, which you will use the Public IP Add
 - You can also give the virtual machine a name to properly identify it (for this project we'll use "osTicket"). Once thats entered, it should look something like this 
 
 ![vm ip for rdc login 2](https://github.com/user-attachments/assets/4bd7a881-676f-41bb-9cee-0adb8f92b8ef)
+Select "ADD" and you now have a created virtual machine that is ready to operate
 
-
-- Select "ADD" and you now have a created virtual machine that is ready to operate
 
 ![vm created ready to login](https://github.com/user-attachments/assets/62cfae2b-c06e-4110-864a-4a4cc8bb07d5)
 
 
 Next, we are going to select the virtual machine within the Remote Desktop app and login using the same Administrator Account credentials that you used to create the Virtual machine within Azure (in the previous beginning steps)
-
 ![rdc app login](https://github.com/user-attachments/assets/bb9835f0-9501-465d-9e91-09ea394a42d1)
 
 
@@ -102,12 +100,12 @@ Next, we are going to select the virtual machine within the Remote Desktop app a
 ![rdc loaded up](https://github.com/user-attachments/assets/893d6e68-7b30-471a-958b-bba9d00e2a1d)
 
  
- - After loading, you have successfully logged into the virtual machine you created!
+- After loading, you have successfully logged into the virtual machine you created!
 
 
 
 
-**Note: Everything from here on out will be done the the Virtual Machine only.**
+**Note: Everything from here on out will be done on the Virtual Machine only**
 
 ---
 
@@ -358,7 +356,7 @@ Name: osTicket → OK
 ---
 
 
-### 10. Complete Web Installation
+### Complete Web Installation
 
 Go back to osTicket website in web browser → Press Continue → Fill out osTicket Basic Installation - System Settings and Admin User areas with your own information 
 
@@ -383,20 +381,16 @@ MySQL Password: **root**
  Access URLs:
    
    
-   - Admin/Staff Login: [http://localhost/osTicket/scp/login.php](http://localhost/osTicket/scp/login.php)
-   
-   
-   <img width="1470" height="956" alt="project pic20" src="https://github.com/user-attachments/assets/06fa8890-5dce-4212-a699-29b1f5145d58" />
+Admin/Staff Login: [http://localhost/osTicket/scp/login.php](http://localhost/osTicket/scp/login.php)
+<img width="1470" height="956" alt="project pic20" src="https://github.com/user-attachments/assets/06fa8890-5dce-4212-a699-29b1f5145d58" />
 
    
-   
+---
    
   
    
-   - End User Portal: [http://localhost/osTicket/](http://localhost/osTicket/)
-
-  
-   <img width="1470" height="956" alt="project pic21" src="https://github.com/user-attachments/assets/1a12a927-7771-4765-8d6a-2f2a0c51f271" />
+End User Portal: [http://localhost/osTicket/](http://localhost/osTicket/)
+<img width="1470" height="956" alt="project pic21" src="https://github.com/user-attachments/assets/1a12a927-7771-4765-8d6a-2f2a0c51f271" />
 
 
 ---
