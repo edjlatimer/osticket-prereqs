@@ -3,7 +3,7 @@
 </p>
 
 <h1>osTicket - Prerequisites and Installation</h1>
-This tutorial outlines the prerequisites and installation of the open-source help desk ticketing system osTicket.<br />
+This in-depth tutorial outlines the prerequisites and installation of the open-source help desk ticketing system osTicket.<br />
 
 <h2>Environments and Technologies Used</h2>
 
@@ -387,54 +387,25 @@ Go back to osTicket website in web browser → Press Continue → Fill out osTic
 ![osTicket basic info](https://github.com/user-attachments/assets/53350916-463f-409d-8c3d-10323689f3c3)
 
 
-For Database Settings put these specifics (same credentials created in previous sections of the lab):
+For Database Settings put same credentials created in previous Database section of the lab
+
+- MySQL Database: **osTicket**
+
+- MySQL Username: **root**
+
+- MySQL Password: **root**
+![database settings](https://github.com/user-attachments/assets/9d7a240e-b255-4559-8eca-7c362d3bdf0f)
 
 
-MySQL Database: **osTicket**
-MySQL Username: **root**
-MySQL Password: **root**
+
 
 Click **Install Now!**
 
 
-<img width="1470" height="956" alt="project pic19" src="https://github.com/user-attachments/assets/46677e79-c185-41b2-ad95-c3893d3bcd93" />
+![osTicket complete](https://github.com/user-attachments/assets/a45dee2b-db28-4c28-84b8-e872f555038f)
 
 
- ***osTicket is Officially UP and Ready to Operate***
-
-
- ---
-
- 
- Access URLs:
-   
-   
-Admin/Staff Login: [http://localhost/osTicket/scp/login.php](http://localhost/osTicket/scp/login.php)
-<img width="1470" height="956" alt="project pic20" src="https://github.com/user-attachments/assets/06fa8890-5dce-4212-a699-29b1f5145d58" />
-
-   
----
-   
-  
-   
-End User Portal: [http://localhost/osTicket/](http://localhost/osTicket/)
-<img width="1470" height="956" alt="project pic21" src="https://github.com/user-attachments/assets/1a12a927-7771-4765-8d6a-2f2a0c51f271" />
-
-
----
-
-
-✅ **osTicket is now fully installed and secured on your Azure VM!**
-
----
-
-##  Architecture Diagram 
-```mermaid
-graph TD;
-    User -->|Browser| AzureVM
-    AzureVM -->|IIS + PHP| osTicket
-    osTicket -->|MySQL| Database
-```
+ ✅ **osTicket is now fully installed, ready to operate and secured on your Azure VM!**
 
 ---
 
