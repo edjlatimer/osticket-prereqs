@@ -258,34 +258,46 @@ Next, we are going to select the virtual machine within the Remote Desktop app a
 
 ### Deploy osTicket
 
-- Go back **osTicket-Installation-Files** → (right-click) osTicket v1.15.8 → Extrat All, with in the same folder which creates a separate folder osTicket v1.15.8 (at the top)
+- Go back **osTicket-Installation-Files** → (right-click) **osTicket v1.15.8**(zip) → Extract All → Extract - This will extract within the same folder and create a separate "**osTicket v1.15.8**" folder (without the zipper icon)
+
+
+![osTickect extract folder](https://github.com/user-attachments/assets/e0c9008d-3fb3-4cb8-a190-f21703de7650)
 
 
 <img width="1470" height="956" alt="project pic13" src="https://github.com/user-attachments/assets/89932447-c642-4e6a-8711-46c8339b5092" />
 
 
-Click into the newly created file folder **osTicket v1.15.8**(not the zip folder) → Copy the upload folder → Windows(C:) → inetpub → wwwroot → paste
+
+
+
+- Now go into the newly created file folder **osTicket v1.15.8**(not the zip folder) → Copy **"upload"** folder → Windows(C:) → inetpub → wwwroot → paste![copy  upload  folder](https://github.com/user-attachments/assets/4ae1f433-4b6b-4294-8ef1-44fdea32478e)
 
 
 <img width="1470" height="956" alt="project pic14" src="https://github.com/user-attachments/assets/80f70798-bd9f-4c00-87b7-398262834d6c" />
 
 
-Rename "upload" to "osTicket"(exactly how its spelled) → restart IIS agagin by right-clicking server(osTicket-vm-name) → Stop (wait a moment) → Start
+Rename **"upload"** to **"osTicket"** (exactly how its spelled) 
+![upload rename osTicket](https://github.com/user-attachments/assets/f36a4df6-5a7f-4a6e-b602-ff9db10faedc)
 
 
-In IIS Manager → server(osTicket-vm-name) → Sites → Default Web Site → osTicket → Browse *:80(http)
+Restart IIS agagin by right-clicking server(osTicket-vm-name) → Stop (wait a moment) → Start
+![restart IIS again](https://github.com/user-attachments/assets/5ace6e0b-f694-4bad-bc71-37f66e554355)
 
 
-That should bring up osTicket
+Now you are going to actually load the osTicket Site 
+- Go to IIS Manager → server(osTicket-vm) → Sites → Default Web Site → osTicket → Browse *:80(http)
+![osTicket site](https://github.com/user-attachments/assets/d20e2401-1e37-4a1a-a6fa-4b4a0ba6ddbd)
+
 
 
 <img width="1470" height="956" alt="project pic15" src="https://github.com/user-attachments/assets/094d7397-8c56-4e16-a7a2-a3e21b6d678b" />
+That will bring up osTicket Site
 
 
 ---
 
 
-### 7. Enable PHP Extensions that are Disabled (in previous picture)
+### Enable PHP Extensions that are Disabled (in previous picture)
 
 - In IIS → Sites → Default → osTicket → PHP Manager (double-click) → Enable or Disable an Extension
 - Find and Enable:
