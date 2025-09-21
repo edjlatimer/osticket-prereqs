@@ -169,15 +169,27 @@ Next, we are going to select the virtual machine within the Remote Desktop app a
  
  
  
- ### Installing PHP Manager
+ ### Installing PHP Manager & Rewrite Module
   
  - From **osTicket-Installation-Files** → Install **PHPManagerForIIS_V1.5.0** & **rewrite_amd64_en-US** (* Double-click individually and go through each installation seperately)
 
 
 <img width="1470" height="956" alt="project pic7" src="https://github.com/user-attachments/assets/9f45bdc8-b64a-4154-bcaa-627e8877dfa2" />
 
-  
- - **Create a directory:** Go to File Exploer → This PC → Windows(C:) → create new folder(Titled "PHP")
+
+
+- PHP Manager Install
+![PHP manager install](https://github.com/user-attachments/assets/4e55c2c0-5290-43aa-b1aa-160fe620674b)
+
+
+- Rewrite Module Install
+![rewrite module install](https://github.com/user-attachments/assets/899d7803-e9fc-4d2d-b11d-afe4fa5b8f73)
+
+ ---
+ 
+ ### Create a directory
+
+- Go to File Exploer → This PC → Windows(C:) → create new folder(Titled "PHP")
   
   
  -  Go back to **osTicket-Installation-Files** → (right-click) php-7.3.8-nts-Win32-VC15-x86.zip → Extract All → Browse → Windows (C:) → PHP → Extract
