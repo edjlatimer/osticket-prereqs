@@ -291,7 +291,7 @@ Now you are going to actually load the osTicket Site
 
 
 <img width="1470" height="956" alt="project pic15" src="https://github.com/user-attachments/assets/094d7397-8c56-4e16-a7a2-a3e21b6d678b" />
-That will bring up osTicket Site
+That will bring up osTicket Site, but notice how there are alot of PHP extentions disabled (red Xs)
 
 
 ---
@@ -299,12 +299,26 @@ That will bring up osTicket Site
 
 ### Enable PHP Extensions that are Disabled (in previous picture)
 
-- In IIS → Sites → Default → osTicket → PHP Manager (double-click) → Enable or Disable an Extension
-- Find and Enable:
+Go back IIS → Sites → Default → osTicket → PHP Manager (double-click) → Enable or Disable an Extension
+![PHP extentions](https://github.com/user-attachments/assets/9d83492c-c1dd-4562-b46c-0b367541b0b4)
+
+
+
+
+
+
+
+Find and Enable:
   - php_imap.dll 
   - php_intl.dll
   - php_opcache.dll
-- Refresh osTicket in the browser to confirm changes.
+![enable extentions](https://github.com/user-attachments/assets/e6ea904b-e822-4eef-a4d9-19deac3116a1)
+
+
+
+
+
+- Refresh osTicket site in the browser to confirm changes
 
 
 <img width="1470" height="956" alt="project pic16" src="https://github.com/user-attachments/assets/8b77a597-935d-44d0-99fd-35b85b1e928f" />
@@ -313,11 +327,11 @@ That will bring up osTicket Site
 Notice a few more PHP Extensions are now checked green
  
 
-### 8. Configure osTicket Files
+### Configure osTicket Files
 
 -  Rename configuration file and assign permissions
  
- -  File Exploer → This PC  → windows(C:) → inetpub → wwwroot → osTicket → include → find **ost-sampleconfig.php** (right-click) → Rename → **ost-config.php** 
+-  File Exploer → This PC  → windows(C:) → inetpub → wwwroot → osTicket → include → find **ost-sampleconfig.php** (right-click) → Rename → **ost-config.php** 
 
 -  **ost-config.php**(right-click) → properties → Security → Advanced → Diable inheritance → Remove all inherited permissions from this object → Add → Select a principal → 'type' Everyone (for the sake of the project) → Check Names → OK → check Full control → Apply → OK
 
