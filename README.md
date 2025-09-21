@@ -169,7 +169,7 @@ Next, we are going to select the virtual machine within the Remote Desktop app a
  
  ### Installing PHP Manager & Rewrite Module
   
- - From **osTicket-Installation-Files** → Install **PHPManagerForIIS_V1.5.0** & **rewrite_amd64_en-US** (* Double-click individually and go through each installation seperately)
+- From **osTicket-Installation-Files** → Install **PHPManagerForIIS_V1.5.0** & **rewrite_amd64_en-US** (* Double-click individually and go through each installation seperately)
 
 
 <img width="1470" height="956" alt="project pic7" src="https://github.com/user-attachments/assets/9f45bdc8-b64a-4154-bcaa-627e8877dfa2" />
@@ -251,7 +251,7 @@ Next, we are going to select the virtual machine within the Remote Desktop app a
 
 ![configure IIS 3](https://github.com/user-attachments/assets/32451ff3-1f56-414b-82fd-cec27613b9e4)
 
-
+---
 
 
 ### Deploy osTicket
@@ -316,41 +316,65 @@ Find and Enable:
 
 
 
-- Refresh osTicket site in the browser to confirm changes
+Refresh osTicket site in the browser to confirm changes
 
 
 <img width="1470" height="956" alt="project pic16" src="https://github.com/user-attachments/assets/8b77a597-935d-44d0-99fd-35b85b1e928f" />
 
 
 Notice a few more PHP Extensions are now checked green
+
+
+---
+
+
+### Rename Configuration File and Assign Permissions
  
+Go to File Exploer → This PC  → windows(C:) → inetpub → wwwroot → osTicket → include → find **ost-sampleconfig.php** (right-click) → Rename → **ost-config.php**
+![rename sampleconfig](https://github.com/user-attachments/assets/b772d3bf-f6b3-4943-bc4d-4aa51f1717ac)
 
-### Configure osTicket Files
-
--  Rename configuration file and assign permissions
- 
--  File Exploer → This PC  → windows(C:) → inetpub → wwwroot → osTicket → include → find **ost-sampleconfig.php** (right-click) → Rename → **ost-config.php** 
-
--  **ost-config.php**(right-click) → properties → Security → Advanced → Diable inheritance → Remove all inherited permissions from this object → Add → Select a principal → 'type' Everyone (for the sake of the project) → Check Names → OK → check Full control → Apply → OK
+![config php renamed](https://github.com/user-attachments/assets/842d05be-069d-44bd-ba7f-3732035ffa3a)
 
 
+
+Next (richt-click) **ost-config.php** → properties → Security → Advanced → Diable inheritance → Remove all inherited permissions from this object 
+![config permissions](https://github.com/user-attachments/assets/6828756a-2b18-42c0-9157-0f6485634c84)
+
+![remove permissions](https://github.com/user-attachments/assets/4baf2ef8-8a16-4d8e-a08b-66b3d973d6cd)
+
+
+
+Then select Add → Select a principal 
+![add permissions](https://github.com/user-attachments/assets/b3ccfe6a-b46b-4723-a84b-75035d7b1180)
+
+
+
+Type "Everyone" (for sake of the project) → Select Check Names → OK → Check Full control → Apply → OK
+![full control permissions](https://github.com/user-attachments/assets/b2511f1d-1328-48d0-88b8-eda5992298b1)
 <img width="1470" height="956" alt="project pic17" src="https://github.com/user-attachments/assets/b70d4fa7-3f25-4521-b741-ec16f54ff11b" />
 
 
 ---
 
 
-### 9. Set Up osTicket Database
+### Set Up osTicket Database
 
-Go to **osTicket-Installation-Files** on the Desktop → HeidiSQL_12.3.0.6589_Setup → Install → skip → New →
-Username: **root** & Password: **root** → Open → Unnamed(right-click) → Create New → Database → 
+Go back to **osTicket-Installation-Files** → (Double-click)**HeidiSQL_12.3.0.6589_Setup** → Go Through Install → (Make sure Launch HeidiSQL is checked) → Finsih
+![HeidiSQL install](https://github.com/user-attachments/assets/8a4323b8-6176-42ee-b673-5ee7bcded08d)
+
+![heieisql install complete](https://github.com/user-attachments/assets/294c2667-6a28-41d8-bcc6-dd04d1f1d97b)
+
+
+Skip → New → User: **root** & Password: **root** → Open 
+![heidiSQL install finish](https://github.com/user-attachments/assets/3e999e66-b3e2-4f8a-8ed7-c8f1f69bf1bc)![create database](https://github.com/user-attachments/assets/547bc380-c569-472f-a8fd-06a51003e2bb)
+
+Then (right-click) Unnamed → Create New → Database → 
 Name: osTicket → OK
+![finishing database](https://github.com/user-attachments/assets/7dbac109-1bec-4625-8b21-0d98088e7724)
+![name database](https://github.com/user-attachments/assets/009af8fa-37c7-4c4b-9568-aeb261a57838)
 
-
-<img width="1470" height="956" alt="project pic18" src="https://github.com/user-attachments/assets/469d8e6c-164e-4474-be5c-baca1e9f4e0a" />
-
-
-
+Now you should see osTicket database created under the Unnamed Tab
+![osticket database complete](https://github.com/user-attachments/assets/8f5ed810-47b9-4fe8-806b-b4d28013831f)
 
 
 ---
@@ -359,14 +383,18 @@ Name: osTicket → OK
 ### Complete Web Installation
 
 Go back to osTicket website in web browser → Press Continue → Fill out osTicket Basic Installation - System Settings and Admin User areas with your own information 
+*Default Email in (System Settings) cannot be the same as the Email Address in (Admin User section) 
+![osTicket basic info](https://github.com/user-attachments/assets/53350916-463f-409d-8c3d-10323689f3c3)
 
-For Database Settings put these specifics(for the sake of the lab) →
+
+For Database Settings put these specifics (same credentials created in previous sections of the lab):
+
 
 MySQL Database: **osTicket**
 MySQL Username: **root**
 MySQL Password: **root**
 
- Click **Install Now!**
+Click **Install Now!**
 
 
 <img width="1470" height="956" alt="project pic19" src="https://github.com/user-attachments/assets/46677e79-c185-41b2-ad95-c3893d3bcd93" />
