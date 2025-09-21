@@ -150,22 +150,37 @@ Next, we are going to select the virtual machine within the Remote Desktop app a
  
 ### Install IIS with CGI support
 
- - Go to Start Menu → Contorl Panel → Uninstall a program → Select Turn windows features on or off (on the left       side) → Enable Internet Information Services **(IIS)** → World Wide Web Services → Application Development Features → Enable **CGI**.
+ - Go to Start Menu → Contorl Panel → Uninstall a program → Select Turn windows features on or off (on the left side) → Enable Internet Information Services **(IIS)** → World Wide Web Services → Application Development Features → Enable **CGI** → OK
+
+   
+![CGI install](https://github.com/user-attachments/assets/a6fc5f7c-0b03-4498-aa4e-e229611a0f48)
 
 
-<img width="1470" height="956" alt="project pic6" src="https://github.com/user-attachments/assets/f8becf06-598f-4cc0-9a63-209146696e31" />
+ - Allow a moment for install to finish and it will let you know it is complete
 
   
-   -  From **osTicket-Installation-Files** → Install **PHPManagerForIIS_V1.5.0** & **rewrite_amd64_en-US** (*Install individually by double-clicking each one seperately)
+![CGI install process](https://github.com/user-attachments/assets/c4d3428d-9f95-4e10-a012-7ba685d1c13f)
+
+![CGI completed](https://github.com/user-attachments/assets/71dbf847-4d70-4500-8814-b82f9a302beb)
+
+
+---
+ 
+ 
+ 
+ 
+ ### Installing PHP Manager
+  
+ - From **osTicket-Installation-Files** → Install **PHPManagerForIIS_V1.5.0** & **rewrite_amd64_en-US** (* Double-click individually and go through each installation seperately)
 
 
 <img width="1470" height="956" alt="project pic7" src="https://github.com/user-attachments/assets/9f45bdc8-b64a-4154-bcaa-627e8877dfa2" />
 
   
-   - **Create a directory:** Go to File Exploer → This PC → Windows(C:) → create new folder(Titled "PHP")
+ - **Create a directory:** Go to File Exploer → This PC → Windows(C:) → create new folder(Titled "PHP")
   
   
-   -  Go back to **osTicket-Installation-Files** → (right-click) php-7.3.8-nts-Win32-VC15-x86.zip → Extract All → Browse → Windows (C:) → PHP → Extract
+ -  Go back to **osTicket-Installation-Files** → (right-click) php-7.3.8-nts-Win32-VC15-x86.zip → Extract All → Browse → Windows (C:) → PHP → Extract
    
 
 
